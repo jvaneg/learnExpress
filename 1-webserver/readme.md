@@ -12,6 +12,7 @@ Main things I learned:
 - how to redirect pages to other pages
 
 # Installation
-
+```
 cd 1-webserver
 npm install
+```
