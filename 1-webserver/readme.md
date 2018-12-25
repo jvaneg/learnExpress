@@ -10,3 +10,8 @@ Main things I learned:
 - how to serve json content
 - how to retrieve variables from GET req urls, and POST req bodies
 - how to redirect pages to other pages
+
+# Installation
+
+cd 1-webserver
+npm install
