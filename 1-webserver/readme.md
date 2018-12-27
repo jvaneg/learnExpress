@@ -11,8 +11,13 @@ Main things I learned:
 - how to retrieve variables from GET req urls, and POST req bodies
 - how to redirect pages to other pages
 
-# Installation
+# Install/Run
+Install:
 ```
 cd 1-webserver
 npm install
+```
+Run:
+```
+node app
 ```

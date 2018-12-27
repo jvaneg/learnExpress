@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= title
+
+    //pug for loop-ish thing
+    each service, index in services
+        .card.bg-light.card-body
+            h3 #{service.name}
+            p #{service.description}
+            p
+                | Price range: #{service.price_range}
