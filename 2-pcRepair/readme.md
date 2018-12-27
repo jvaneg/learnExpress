@@ -22,4 +22,4 @@ npm start
 ```
 
 ## Note
-To use the emailer in this project you will have to sub in real emails/auth info in the services.js file.
+To use the emailer in this project you will have to sub in real emails/auth info in the contact.js file.
