@@ -1,5 +1,7 @@
 # Node stuff
 node_modules/
+db/
+bower_components/
 
 # General
 .DS_Store

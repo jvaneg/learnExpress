@@ -1,0 +1,22 @@
+{
+  "name": "3-todolist",
+  "description": "simple todo list",
+  "main": "app.js",
+  "authors": [
+    "joel"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jvaneg/learnExpress",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,34 @@
+<% include ../views/partials/header %>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card bg-light card-body">
+                <form method="post" action="/todo/edit/<%= todo._id %>">
+                    <div class="form-group">
+                        <label>Todo name</label>
+                        <input class="form-control" type="text" name="text" placeholder="Add todo" value="<%= todo.text %>">
+                    </div>
+                    <div class="form-group">
+                        <label>Todo body</label>
+                        <textarea class="form-control" name="body" placeholder="Add body"><%= todo.body %></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit</button> <a class="btn btn-danger" href="/">Cancel</a>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card bg-light card-body">
+                <ul class="list-group">
+                    <% todos.forEach(function(listTodo) { %>
+                        <li class="list-group-item">
+                            <b><%= listTodo.text %></b> <br> <%= listTodo.body %>
+                            <div class="text-right">
+                                <a class="btn btn-light" href="/todo/edit/<%= listTodo._id %>" >Edit</a> <!-- could also do delete in this way, just use a link -->
+                                <a data-id="<%= listTodo._id %>" href="#" class="delete-todo btn btn-danger">Delete</a> <!-- using the class and data-id here because we're doing an ajax removal and need something to hook to, not really required -->
+                            </div>
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    </div>
+<% include ../views/partials/footer %>
