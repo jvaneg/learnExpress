@@ -13,6 +13,6 @@ bower install
 
 Run:
 ```
-npm mongo
+npm run-script mongo
 npm start
 ```
